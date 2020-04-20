@@ -2,21 +2,21 @@
 <html lang="en-US" dir="ltr">
 <head>
   <meta charset="utf-8">
-  <title>TITLE GOES HERE.....</title>
+  <title>Whoops, all titles</title>
   <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
 
 <header>
-  <h1>Welcome to Web Audio!</h1>
+  <h1>Happy happy happy</h1>
 </header>
 
 <main>
-  <h2>Click the buttons to make (or stop) some sound:</h2>
-  <button id="playButton" class="btn-transport" type="button">play</button>
-  <button id="stopButton" class="btn-transport" type="button">stop</button>
+  <h2>Do it or don't, haha:</h2>
+  <button id="playButton" class="btn-transport" type="button">noise</button>
+  <button id="stopButton" class="btn-transport" type="button">shut up</button>
   <fieldset>
-    <legend>Use slider to control filter cutoff frequency</legend>
+    <legend>Use slider to control the aperature of the little machine man's mouth</legend>
     <label id="filterLabel" for="filterSlider">3200</label>
     <input type="range" id="filterSlider" name="filterSlider" min="200" max="6200" step="10" />
   </fieldset>
@@ -26,10 +26,10 @@
 
 <script>
 
-// Create a synth and connect it to the pitch shifter
+// Create a synth and connect it to the master output
 var synth = new Tone.MonoSynth().toMaster();
 // set oscillator to produce sawtooth wave (default is square)
-synth.oscillator.type = "sawtooth";
+synth.oscillator.type = "triangle";
 // set filter envelope octaves to 0, which eliminates effect
 synth.filterEnvelope.octaves = 0;
 // set initial filter frequency to same value as default slider position
